@@ -39,7 +39,7 @@ app.post("/login", (req, res)=> {
                 res.send({ message: "Password didn't match"})
             }
         } else {
-            res.send({message: "User not registered"})
+            res.send({message: "User not found"})
         }
     })
     .catch(err => {
