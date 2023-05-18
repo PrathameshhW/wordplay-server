@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors({ origin: "https://wordplayyy.netlify.app" }));
+app.use(cors());
 
 mongoose
   .connect(
